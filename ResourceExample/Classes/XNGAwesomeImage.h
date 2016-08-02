@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (Awesome)
+@interface XNGAwesomeImage : NSObject
 
 + (UIImage *)awesome;
 

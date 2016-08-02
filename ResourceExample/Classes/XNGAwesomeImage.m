@@ -6,9 +6,9 @@
 //
 //
 
-#import "UIImage+Awesome.h"
+#import "XNGAwesomeImage.h"
 
-@implementation UIImage (Awesome)
+@implementation XNGAwesomeImage
 
 + (UIImage *)awesome {
     NSBundle *bundle = [NSBundle bundleForClass:self.class];
