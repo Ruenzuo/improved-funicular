@@ -1,0 +1,6 @@
+use_frameworks!
+target 'ResourceExample_Tests' do
+  pod 'ResourceExample', :path => '../'
+  
+  
+end
