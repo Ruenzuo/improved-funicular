@@ -12,7 +12,9 @@
 
 + (UIImage *)awesome {
     NSBundle *bundle = [NSBundle bundleForClass:self.class];
-    NSString *path = [bundle pathForResource:@"awesome" ofType:@"png"];
+    NSString *resourceBundlePath = [bundle pathForResource:@"ResourceExample" ofType:bundle];
+    NSBundle *resourceBundle = [NSBundle bundleWithPath:resourceBundlePath];
+    NSString *path = [resourceBundle pathForResource:@"awesome" ofType:@"png"];
     return [UIImage imageWithContentsOfFile:path];
 }
 
